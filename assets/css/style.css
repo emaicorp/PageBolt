@@ -666,10 +666,46 @@ hr{
 }
 
 footer{
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #020f33;
   text-align: center;
   padding: 30px;
+  *{
+    color: white;
+  }
+  ul{
+    list-style-type: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    color: #06a0f1;
+  }
+}
+.link-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  *{
+    text-align: center;
+  }
+  h5{
+    text-align: center;
+    scale: 1.5;
+
+  }
+  ul{
+    padding: 0;
+  }
+  ul li{
+    width: 100%;
+
+  }
+}
+.link-text-container .link-text-list{
+  margin-bottom: 10vh;
 }
 *{
   /* border: 1px solid red; */

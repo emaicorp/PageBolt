@@ -710,9 +710,89 @@ footer{
 *{
   /* border: 1px solid red; */
 }
-
+.log{
+  display: none;
+}
 
 
 
 
 /* MEDIA QUERY */
+
+@media only screen and (max-width:280px) {
+ 
+}
+
+@media only screen and (max-width : 400px){
+
+}
+@media  only screen and (min-width : 768px) {
+ 
+  nav{
+    padding: 16px 50px;
+  }
+  .icon{
+    height: 5vh;
+    width: 18vh;
+  }
+nav ul{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  width: fit-content;
+  list-style-type: none;
+
+}
+nav ul li{
+  margin-left: 10vh;
+  transition: all 0.3s ease;
+}
+nav ul li:hover{
+  color: #06a0f1;
+  cursor: pointer;
+}
+.log{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 20%;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}
+.log a:nth-child(1):hover{
+  color: #06a0f1;
+}
+.log a:nth-child(2){
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+}
+.log a:nth-child(2):hover{
+  background-color: #06a0f1;
+  color: white;
+}
+#toggler{
+  display: none;
+}
+.empty{
+  /* border: 1px solid red; */
+  height: 25vh;
+}
+
+}
+
+@media only screen and (min-width:900px) and (max-width: 1024px){
+
+
+}
+@media only screen and  (min-width:801px) and (max-width: 820px) {
+
+
+}
+@media only screen and (min-width:700px) and (max-width:800px){
+
+}

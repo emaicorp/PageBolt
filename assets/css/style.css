@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* FONT VARIATIONS */
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+/* MAIN CODE */
+  *{
+    font-family: "Poppins", sans-serif;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #faf7f7;
+
+    /* position: relative; */
+}
+.page-body{
+}
+.page-bg1{
+  /* background: url("../images/Mobile-App-Hero-BG.webp");
+  background-position:top;
+  background-size: cover;
+  background-repeat: no-repeat; */
+
+}
+.page-bg2{
+    /* height: 10vh; */
+}
+.sidebar{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background-color: white;
+    
+    /* margin: 0; */
+    /* background-color: black; */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px;
+    align-items: center;
+    z-index: 999;
+    /* border: 1px solid red; */
+    width: 100%;
+    position: fixed;
+}
+.nav.sticky{
+  background-color: white;
+
+  /* border: 1px solid red; */
+}
+nav ul{
+    display: none;
+}
+.icon{
+    height: 2vh;
+    width: 6vh;
+}
+.icon img{
+    height: 100%;
+    width: 100%;
+}
+#toggler{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+  border: none;
+  background-color: transparent;
+  transition: all 1s ease;
+}
+
+#toggler span{
+  margin: 0px;
+  padding: 0px;
+  height: 4px;
+  width: 30px;
+  margin-bottom: 3px;
+  border-radius: 3px;
+  transition: all 0.9s ease;
+
+  background-color: black;
+}
+#toggler span:nth-child(2){
+  width: 20px;
+  /* background-color: #06a0f1;
+  border: 1px solid red; */
+
+}
+.empty{
+  height: 10vh;
+}
+
+.overlay{
+  background-image: url("../images/Mobile-App-Hero-BG.webp");
+  background-size: contain;
+  /* background-position: 0px vh; */
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.head-hero{
+  padding: 0px 20px;
+  margin-top: 20px;
+
+}
+.tiny-text{
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    /* border: 1px solid red; */
+}
+.tiny-text p{
+    width: fit-content;
+    padding: 2px 5px;
+    height: fit-content;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 12px;
+    color: #06a0f1;
+    background-color: #88c7ff53;
+}
+.tiny-text p span.icon-x{
+    margin-left: 10px;
+}
+.span1{
+    background-color: #06a0f1;
+    color: white;
+    padding: 0px 8px;
+    margin-left: 0px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+.header-text{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* position: relative; */
+}
+.header-text h1{
+  /* border: 1px solid red; */
+    width: 100%;
+    font-size: 230%;
+    color: #102a43;
+    font-weight:bolder;
+    padding: 0px;
+    text-align: center;
+}
+.header-text h1 span{
+    color: #06a0f1;
+    /* border: 1px solid red; */
+    /* width: fit-content; */
+
+}
+.blue{
+  width: fit-content;
+  height: fit-content;
+  /* border: 1px solid red; */
+  position: relative;
+
+}
+.whitespace{
+  padding: 0px 20px;
+  /* border: 1px solid red; */
+}
+.overlay-border{
+  /* padding: 0px ; */
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  width: 80%;
+  /* width: 100%; */
+  top: -40px;
+  
+  /* z-index: -1; */
+  background-color: #88c7ff53;
+  /* border: 1px solid red; */
+}
+.header-text p{
+  /* border: 1px solid red; */
+  margin: 0;
+  margin-top: -55px;
+
+}
+.buttons{
+  width: 100%;
+  /* padding: 0px 30px; */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5vh;
+  /* border: 1px solid red; */
+  /* flex-direction: column; */
+}
+.buttons button{
+  width: 40%;
+  height: 6vh;
+  border: none;
+  padding: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 5vh;
+}
+.buttons button img{
+  height: 100%;
+  width: 100%;
+}
+.hero-img-bg{
+height: 100%;
+width: 100%;
+background: url("../images/Mobile-App-Hero-BG-2.webp");
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+.hero-img-bg img{
+  width: 100%;
+  height: 100%;
+}
+
+.revolutionize{
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #FFF7EC4F 0%, #FFF7EC00 100%);
+  /* height: 100vh; */
+  margin-top: 5vh;
+  padding: 0px 30px;
+  
+}
+.rev-text p{
+  margin-bottom: 5vh;
+}
+.rev-text a{
+  background-color: #06a0f1;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 50px;
+  /* margin-top: 10vh; */
+}
+.highlight{
+  color: #06a0f1;
+}
+.rev-hero{
+  background: url("../images/Mobile-App-Revolutionize-BG.webp");
+  background-position: center right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 10vh;
+  position: relative;
+  z-index: -999;
+
+}
+.rev-hero div{
+  /* width: 50%; */
+  height: 100%;
+}
+.rev-hero div img{
+  width: 100%;
+  height: auto;
+
+}
+.rev-hero-left{
+  width: 100%;
+  scale: 1.1;
+}
+.rev-hero-right{
+  position: relative;
+  left: -30px;
+  z-index: -1;
+  width: 100%;
+  scale: 1.2;
+  /* border: 1px solid red; */
+  margin-top: 3vh;
+}
+.rev-hero div img:nth-child(2){
+  border-radius: 50px;
+  position: relative;
+  width: 115%;
+  top: -60px;
+  left: -10px;
+}
+.connection{
+  padding: 0px 20px;
+}
+.connection h2{
+  /* scale: 1.1; */
+  font-size:28px;
+  font-weight: 700;
+  /* padding: 0px 30px; */
+
+}
+.con-text2 p{
+  display: flex;
+  align-items: center;
+  font-size: large;
+  font-weight: 700;
+ 
+}
+.con-text2 span{
+  color: #06a0f1;
+  background-color: #88c7ff53;
+  border-radius: 50px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+
+.con-hero{
+  display: flex;
+  width: 90%;
+  margin-top: 5vh;
+  height: 50vh;
+  padding: 0px 20px;
+  justify-content: center;
+  background: url("../images/Mobile-App-Connections-BG.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+ 
+}
+/* .con-hero div{
+  width: 50%;
+  height: 100%;
+} */
+.con-hero-left{
+  width: 30%;
+}
+.con-hero-right{
+  height: auto;
+}
+.con-hero div img{
+  height: 100%;
+  width: 100%;
+}
+.con-hero-left .img{
+  position: relative;
+  scale: 1.8;
+  top: 140px;
+  overflow: hidden;
+}
+.con-hero-left .animated{
+  background-color: orange;
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  padding: 15px;
+  border-radius: 50%;
+  animation: bounce 3s infinite alternate;
+  color: white;
+}
+.con-hero-left .animated span{
+  width: fit-content;
+  height: fit-content;
+}
+@keyframes bounce {
+  0%{top: 0px;}
+  100%{top:-20px}
+  
+}
+.con-hero-left .img img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+
+}
+.high-quality{
+  padding: 20px 20px;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #FFF7EC4F 0%, #FFF7EC00 100%);
+  margin-top: 10vh;
+}
+.check-div p{
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: large;
+}
+.check-div span{
+  color: #06a0f1;
+  background-color: #88c7ff53;
+  border-radius: 50px;
+  padding: 5px;
+  margin-right: 5px;
+}
+.high-quality-hero{
+  display: flex;
+  background: url("../images/Mobile-App-High-Quality-BG.webp");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.high-quality-right{
+  position: relative;
+  z-index: 1;
+  top: 15px;
+  width: 50%;
+  right: 30px;
+  height: 100%;
+}
+.high-quality-left{
+  position: relative;
+  z-index: 2;
+  top: 60px;
+  width: 45%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.high-quality-left img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+
+}
+ .high-quality-right img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.communicate{
+  background-color: #88c7ff1f;
+  padding: 20px;
+  text-align: center;
+}
+.com-hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.com-hero div{
+  width: 90%;
+  border-radius: 10px;
+  /* height: 50vh; */
+  margin-top: 5vh;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+
+  background-color: white;
+}
+.com-hero div div{
+  width: 100%;
+  /* height: 100%; */
+}
+.com-hero div div img{
+  width: 100%;
+  /* height: 100%; */
+}
+.com-hero-left{
+  /* border: 1px solid red; */
+  /* margin-bottom: 15vh; */
+}
+.com-hero-right{
+  /* border: 1px solid red; */
+
+
+}
+.com-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: fit-content;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  max-width: 100%;
+  margin: 0;
+  *{
+    padding: 0px 20px;
+    margin: 0;
+
+  }
+}
+.com-text p{
+  margin-top: 10px;
+  text-align: center;
+  align-items: center;
+  /* padding: 15px; */
+  /* line-break:anywhere; */
+  /* font-size: small; */
+  /* line-height: 1em; */
+}
+
+/* .com-hero div div p, .com-hero div div h3{
+  padding: 20px 0px;
+} */
+
+.come-hero-2{
+  background-color: #020f33;
+  height: 150vh;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  top: -190vh;
+  z-index: 1;
+  border: 1px solid red;
+}
+hr{
+  position: relative;
+  z-index: 2;
+  margin: 5vh 0vh;
+}
+.experience{
+  position: relative;
+  z-index: 2;
+  padding: 0px 20px;
+
+}
+.experience h1{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+.ex-divs{
+  position: relative;
+  width: 100%;
+  padding: 20px 0px;
+  z-index: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ex-divs-hero{
+  /* height: 15vh; */
+  margin-top: 5vh;
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+ 
+
+  /* padding:15px; */
+  background-color: white;
+}
+.ex-divs-hero:hover{
+  transform: translateY(-10px);
+}
+.ex-divs-hero:nth-child(1){
+  border-top: 5px solid yellow;
+  box-shadow: -1px 10px 50px 0px rgba(34.000000000000036, 47.000000000000064, 62.00000000000007, 0.15);
+}
+.ex-divs-hero:nth-child(2){
+  border-top: 5px solid skyblue;
+  box-shadow: -1px 10px 50px 0px rgba(34.000000000000036, 47.000000000000064, 62.00000000000007, 0.15);
+}
+.ex-divs-hero:nth-child(3){
+  border-top: 5px solid orangered;
+  box-shadow: -1px 10px 50px 0px rgba(34.000000000000036, 47.000000000000064, 62.00000000000007, 0.15);
+}
+.ex-divs-hero div{
+  padding: 10px;
+}
+
+.about{
+  margin-top: -150vh;
+  padding: 20px;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #FFF7EC4F 0%, #FFF7EC00 100%);
+
+}
+.item{
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.452);
+}
+.item-head{
+  line-height: 0px;
+  margin-bottom: 4vh;
+}
+.item-img{
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.item-img img{
+  height: 100%;
+  width: 100%;
+}
+*{
+  /* border: 1px solid red; */
+}
+
+
+
+
+
+/* MEDIA QUERY */

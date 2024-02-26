@@ -713,6 +713,9 @@ footer{
 .log{
   display: none;
 }
+.break2{
+  display: none;
+}
 
 
 
@@ -775,14 +778,75 @@ nav ul li:hover{
   background-color: #06a0f1;
   color: white;
 }
+.nav.sticky .log a:nth-child(2){
+  background-color: #06a0f1;
+}
 #toggler{
   display: none;
 }
 .empty{
   /* border: 1px solid red; */
-  height: 25vh;
+  height: 15vh;
 }
+.tiny-text p{
+  font-size: large;
+}
+/* .page-bg2{
+  background: url("../images/Mobile-App-Hero-BG.webp");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 
+} */
+.overlay{
+height: 130vh;
+background-size: contain;
+background-position: center;
+}
+.header-text{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+align-items: center;
+/* width: 50%; */
+  justify-content: center;
+}
+.header-text h1{
+  font-size: 400%;
+  width: 70%;
+  scale: 1.2;
+}
+.overlay-border{
+  width: 55%;
+  top: -90px;
+  left: 10vh;
+}
+.break{
+  display: none;
+}
+.whitespace{
+  display: none;
+  border: 1px solid red;
+}
+.header-text p{
+  width: 40%;
+  margin-top: -125px;
+}
+.buttons{
+  width: 30%;
+}
+.hero-img-bg{
+  width: 70%;
+  height: 70%;
+  z-index: 1;
+}
+.revolutionize{
+  display: flex;
+  padding: 20px 80px;
+}
+.rev-header h1{
+  font-size: 50px;
+}
 }
 
 @media only screen and (min-width:900px) and (max-width: 1024px){

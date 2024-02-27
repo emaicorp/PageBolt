@@ -674,13 +674,16 @@ hr{
 .carousel-container{
   display: flex;
   overflow-x: auto;
+  justify-content: space-between;
+  width: 100%;
   scroll-behavior: smooth;
 }
 .item{
   background-color: white;
-  width: 100vh;
+  min-width: 270px;
+  margin-right: 30px;
   border-radius: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.452);
 }
@@ -697,6 +700,9 @@ hr{
 .item-img img{
   height: 100%;
   width: 100%;
+}
+.pre-btn , .nxt-btn{
+  display: none;
 }
 
 .super-hero{
@@ -1059,13 +1065,27 @@ margin-top: -5vh;
   padding: 20px 80px;
  
 }
-
+.about h1{
+  width: 50%;
+  font-size: 50px;
+  color: #102a43;
+}
+.about-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .carousel-container::-webkit-scrollbar{
   display: none;
 }
+.about-btn{
+  display: flex;
+}
 .pre-btn , .nxt-btn{
+  display: flex;
   height: 100%;
   border: none;
+  background-color: transparent;
   top: 0;
   /* display: flex;
   position: absolute; */

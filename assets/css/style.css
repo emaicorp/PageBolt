@@ -1122,6 +1122,7 @@ margin-top: -5vh;
 }
 .super-text h1{
   font-size: 50px;
+  width: 100%;
   color: #102a43;
   line-height: 60px;
 }

@@ -75,6 +75,27 @@ function reveal(){
          }
     }
 }
+window.addEventListener("scroll", revealImg);   
+function revealImg(){
+    let reveals = document.querySelectorAll('.reveal-img')
+    for(let i = 0; i<reveals.length; i++){
+         let windowHeight = window.innerHeight;
+         let revealTop = reveals[i].getBoundingClientRect().top;
+         let revealPoint = 50;
+         
+
+         if(revealTop < windowHeight - revealPoint  ){
+            reveals[i].classList.add('active');
+            $(document).ready(function () {
+
+            $('#report').load(location.href + " #report");
+        });
+
+         }else{
+            reveals[i].classList.remove('active');
+         }
+    }
+}
 
 const carouselContainer = [...document.querySelectorAll('.carousel-container')];
 const nxtBtn = [...document.querySelectorAll('.nxt-btn')];

@@ -285,6 +285,7 @@ nav ul{
   /* border: 1px solid red; */
   /* flex-direction: column; */
 }
+
 .buttons button{
   width: 40%;
   height: 6vh;
@@ -293,7 +294,17 @@ nav ul{
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 5vh;
+  position: relative;
+  transition: all 1s ease;
 }
+.buttons button:hover{
+  scale: 1.1;
+}
+.btn-div button{
+  position: relative;
+  z-index: 2;
+}
+
 .buttons button img{
   height: 100%;
   width: 100%;
@@ -648,7 +659,7 @@ hr{
   transform: translateY(-10px);
 }
 .ex-divs-hero:nth-child(1){
-  border-top: 5px solid yellow;
+  border-top: 5px solid #ffc700;
   box-shadow: -1px 10px 50px 0px rgba(34.000000000000036, 47.000000000000064, 62.00000000000007, 0.15);
 }
 .ex-divs-hero:nth-child(2){
@@ -659,8 +670,28 @@ hr{
   border-top: 5px solid orangered;
   box-shadow: -1px 10px 50px 0px rgba(34.000000000000036, 47.000000000000064, 62.00000000000007, 0.15);
 }
+.ex-divs-hero:nth-child(1) div span{
+  background-color: #ffc700;
+
+}
+.ex-divs-hero:nth-child(2) div span{
+  background-color: skyblue;
+
+}
+.ex-divs-hero:nth-child(3) div span{
+  background-color: orangered;
+
+}
 .ex-divs-hero div{
   padding: 10px;
+}
+.ex-divs-hero div span{
+  font-size: 40px;
+  border-radius: 50%;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  color:#020f33;
 }
 
 .about{
@@ -1047,7 +1078,15 @@ margin-top: -5vh;
 .experience{
   padding: 0px 80px;
   margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+}
+.experience h1{
+  font-size: 50px;
+  width: 50%;
 }
 .ex-divs{
   display: flex;

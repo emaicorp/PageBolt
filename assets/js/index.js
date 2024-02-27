@@ -75,3 +75,18 @@ function reveal(){
          }
     }
 }
+
+const carouselContainer = [...document.querySelectorAll('.carousel-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+carouselContainer.forEach((item, i) =>{
+    let containerDimension = item.getBoundingClientRect();
+    let containerWidth = containerDimension.width;
+    nxtBtn[i].addEventListener("click", ()=>{
+        item.scrollLeft += containerWidth;
+    })
+    preBtn[i].addEventListener("click", ()=>{
+        item.scrollLeft -= containerWidth;
+    })
+})

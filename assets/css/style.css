@@ -896,7 +896,6 @@ footer{
     max-width: 90%;
     padding-right: -20vh ;
     overflow-x: hidden;
-    justify-content: space-around;
     /* border: 1px solid red; */
 
     *{

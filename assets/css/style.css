@@ -826,21 +826,93 @@ footer{
 
 /* MEDIA QUERY */
 
-@media only screen and (max-width:280px) {
+@media screen and (max-width:360px) {
+  .whitespace{
+    display: none;
+  }
+  .break, .break2{
+    display:none;
+  }
  
 }
-
-@media only screen and (max-width : 414px){
+@media only screen and (min-width:376px) and  (max-width : 414px){
 .whitespace{
   display: block;
 }
 .break{
   display: block;
 }
-
+.come-hero-2{
+  top: -210vh;
+  height: 155vh;
+  border: 3px solid red;
+}
+.experience{
+  margin-bottom: 20vh;
+}
 
 }
-@media  only screen and (min-width : 768px) {
+@media only screen and (max-width:430px) {
+ .come-hero-2{
+  top: -220vh;
+  height: 150vh;
+ }
+ .experience{
+  margin-bottom: 30vh;
+
+ }
+ .whitespace{
+  display: block;
+ }
+}
+@media only screen and (min-width:431px) and (max-width:768px){
+  *{
+    /* border: 1px solid red; */
+  }
+  .rev-hero div img:nth-child(2){
+       border: 1px solid green;
+       left: -40px;
+ 
+  }
+  body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    /* max-width: 450px; */
+    /* width: fit-content; */
+  }
+
+  /* .toggle{
+    margin-right: 50px;
+    margin: 0;
+
+  } */
+  .page-body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  nav{
+    max-width: 90%;
+    padding-right: -20vh ;
+    overflow-x: hidden;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+
+    *{
+      /* border: 1px solid red; */
+    }
+  }
+  .na{
+    /* border: 1px solid red; */
+
+    padding: 0;
+    /* *{
+      border: 1px solid red;
+    } */
+  }
+}
+@media  only screen and (min-width : 769px) {
  
   nav{
     padding: 16px 50px;
